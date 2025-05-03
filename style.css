@@ -445,7 +445,10 @@
   transition: all 0.2s ease;
   font-size: 1.05rem ;
 }
-
+.resume-btn a {
+  color: white;
+  text-decoration: none;
+}
 .resume-btn:hover {
   background-color: #d0301e;
   transform: translateY(-2px);

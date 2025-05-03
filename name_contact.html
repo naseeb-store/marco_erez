@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <link rel="stylesheet" href="name_contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="navbar-brand">Angi</div>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <span class="number-circle">1</span>
+                    <a href="#">Share details</a>
+                </li>
+                <li class="nav-item">
+                    <span class="number-circle">2</span>
+                    <a href="#">Get quotes</a>
+                </li>
+                <li class="nav-item">
+                    <span class="number-circle">3</span>
+                    <a href="#">Compare</a>
+                </li>
+            </ul>
+        </div>
+        <button class="navbar-toggle" aria-label="Toggle navigation">☰</button>
+    </nav>
+
+    <section class="continue-prompt">
+        <div class="prompt-content">
+            <h2 class="prompt-title">We have matching pros in your area!</h2>
+            <p class="prompt-message">Project: Hire a Handyman</p>
+        </div>
+    </section>
+
+
+    <!-- form-container -->
+
+    <div class="form-container">
+        <!-- <h2 class="form-title">Contact Information</h2> -->
+        
+        <div class="form-scrollable">
+            <form id="userInfoForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    </div>
+                </div>
+                
+                <div class="form-group" id="phoneGroup" style="display: none;">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                </div>
+                
+                <div class="form-group" id="emailGroup" style="display: none;">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    <label for="newsletter">Text me project cost guides, how-to articles, and advice.</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">View Matching Pros</button>
+                
+                <div class="legal-text">
+                    <p>By clicking View Matching Pros, I agree to <a href="#"><strong>Angi's Terms</strong> </a>and <strong><a href="#">Privacy Policy</a></strong>, and that Angi and its service professionals, or parties acting on their behalf, may use automated technology and prerecorded messages to deliver marketing calls or texts regarding my project and future projects to the number I provided. Consent is not a condition of service.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<br><br><br>
+
+    <!-- footer_container -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="copyright">© 1995-2025, Angi. All Rights Reserved.</div>
+            <nav class="footer-nav">
+                <a href="#" class="footer-link">Terms of Use</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">California Privacy</a>
+                <a href="#" class="footer-link">Do Not Sell</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="name_contact.js"></script>
+</body>
+</html>

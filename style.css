@@ -14,12 +14,14 @@
   
   /* Navbar Styles */
   .navbar {
-    display: flex;
-    align-items: center;
     padding: 1rem 2rem;
     background-color: white;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
   }
   
   .logo {
@@ -74,116 +76,6 @@
   .nav-link.active::after {
     width: 100%;
   }
-  
-  /* Dropdown Menu Styles */
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: white;
-    width: 900px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 0 0 4px 4px;
-    z-index: 100;
-    flex-wrap: wrap;
-  }
-  
-  .dropdown-menu.active {
-    display: flex;
-  }
-  
-  .dropdown-column {
-    flex: 1;
-    min-width: 200px;
-    padding: 0 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .dropdown-column h3 {
-    color: #f65a4a;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-  }
-  
-  .dropdown-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .dropdown-column li {
-    padding: 0.3rem 0;
-    cursor: pointer;
-    font-size: 0.9rem;
-  }
-  
-  .dropdown-column li:hover {
-    color: #f65a4a;
-  }
-  
-  .divider {
-    height: 1px;
-    background-color: #eee;
-    margin: 1rem 0;
-  }
-  
-  /* Research & Plan Items - Inline Image Layout */
-  .research-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .research-list li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 8px 0;
-    border-bottom: 1px solid #f0f0f0;
-    transition: all 0.2s ease;
-  }
-  
-  .research-list li:last-child {
-    border-bottom: none;
-  }
-  
-  .research-list li:hover {
-    background-color: #f9f9f9;
-  }
-  
-  .research-image {
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
-    border-radius: 4px;
-    overflow: hidden;
-    background-color: #f5f5f5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .research-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .research-list li:hover .research-image img {
-    transform: scale(1.1);
-  }
-  
-  .research-text {
-    flex: 1;
-    font-size: 0.9rem;
-    transition: color 0.2s ease;
-  }
-  
-  .research-list li:hover .research-text {
-    color: #f65a4a;
-  }
-  
   /* Responsive Adjustments */
   @media (max-width: 1024px) {
     .dropdown-menu {
@@ -299,6 +191,7 @@
 .icon-navigation {
   padding: 50px 0;
   background-color: #fff;
+  
 }
 
 .icon-navigation .container {
@@ -329,6 +222,13 @@
   text-decoration: none;
   color: #333;
   transition: transform 0.3s ease;
+  background-color: white;
+  border-radius: 4px; /* Reduced from 8px for a more rectangular shape */
+  padding: 1rem;
+  border: 2px solid rgb(119, 105, 105);
+  gap: 0.5rem;
+  min-height: 50px;
+  box-shadow: none;
 }
 
 .icon-item:hover {

@@ -27,7 +27,7 @@
   .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #f65a4a;
+    color: #2168ae;
     margin-right: 3rem;
     font-family: 'Georgia', serif;
   }
@@ -58,7 +58,7 @@
   
   .nav-link:hover,
   .nav-link.active {
-    color: #f65a4a;
+    color: #2168ae;
   }
   
   .nav-link::after {
@@ -68,7 +68,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #f65a4a;
+    background-color: #2168ae;
     transition: width 0.3s ease;
   }
   
@@ -335,7 +335,7 @@
 }
 
 .resume-btn {
-  background-color: #f65a4a;
+  background-color: #2168ae;;
   color: white;
   border: none;
   padding: 1rem 7rem;
@@ -350,7 +350,7 @@
   text-decoration: none;
 }
 .resume-btn:hover {
-  background-color: #d0301e;
+  background-color: #05284a;;
   transform: translateY(-2px);
 }
 

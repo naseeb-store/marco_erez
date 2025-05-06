@@ -28,7 +28,7 @@ body {
 .navbar-brand {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #fc5647;
+    color: #2168ae;
     margin-right: 2rem;
     font-style: inherit;
 }
@@ -61,7 +61,7 @@ body {
 
 .nav-item.active .number-circle {
     background-color: rgb(218, 183, 178);
-    color: #f29087;
+    color: #2168ae;
 }
 
 .nav-item a {
@@ -244,7 +244,7 @@ input[type="email"] {
 }
 
 input:focus {
-    border-color: #fc5647;
+    border-color: #2168ae;
     outline: none;
     box-shadow: 0 0 0 2px rgba(252, 86, 71, 0.2);
 }
@@ -275,7 +275,7 @@ input::placeholder {
 .submit-btn {
     width: 100%;
     padding: 14px;
-    background-color: #fc5647;
+    background-color: #2168ae;
     color: white;
     border: none;
     border-radius: 4px;
@@ -287,7 +287,7 @@ input::placeholder {
 }
 
 .submit-btn:hover {
-    background-color: #e04a3b;
+    background-color: #2168ae;
 }
 
 .legal-text {

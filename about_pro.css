@@ -28,7 +28,7 @@ body {
 .navbar-brand {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #fc5647;
+    color: #2168ae;
     margin-right: 2rem;
     font-style: inherit;
 }
@@ -61,7 +61,7 @@ body {
 
 .nav-item.active .number-circle {
     background-color: rgb(218, 183, 178);
-    color: #f29087;
+    color: #3c6a98;
 }
 
 .nav-item a {
@@ -375,15 +375,15 @@ body {
 
 .btn-previous {
     background-color: #fff;
-    color: #fc5647;
-    border: 2px solid #fc5647;
+    color: #2168ae;
+    border: 2px solid #2168ae;
     font-weight: 700;
 }
 
 .btn-next {
-    background-color: #fc5647;
+    background-color: #2168ae;
     color: white;
-    border: 1px solid #fc5647;
+    border: 1px solid #2168ae;
 }
 
 

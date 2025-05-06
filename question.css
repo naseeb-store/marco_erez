@@ -28,7 +28,7 @@ body {
 .navbar-brand {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #fc5647;
+    color: #2168ae;
     margin-right: 2rem;
     font-style: inherit;
 }
@@ -61,7 +61,7 @@ body {
 
 .nav-item.active .number-circle {
     background-color: rgb(218, 183, 178);
-    color: #f29087;
+    color: #3f6082;
 }
 
 .nav-item a {
@@ -238,16 +238,16 @@ body {
   .checkbox {
     width: 22px;
     height: 22px;
-    border: 2px solid #fc5647;
+    border: 2px solid #2168ae;
     border-radius: 15px;
     margin-right: 12px; /* Reduced margin */
     margin-top: 3px;
     position: relative;
-    background: #fc5647;
+    background: #2168ae;
   }
   
   .checkbox.checked {
-    border-color: #fc5647;
+    border-color: #2168ae;
   }
   
   .checkbox.checked::after {
@@ -294,7 +294,7 @@ body {
   }
   
   .primary-btn {
-    background-color: #fc5647;
+    background-color: #2168ae;
     color: white;
     font-weight: 700;
     border: none;
@@ -302,8 +302,8 @@ body {
   
   .secondary-btn {
     background-color: white;
-    color: #fc5647;
-    border: 2px solid #fc5647;
+    color: #2168ae;
+    border: 2px solid #2168ae;
     font-weight: 700;
     font-size: 1rem;
   }
@@ -343,19 +343,19 @@ body {
 }
 
 .primary-btn {
-  background-color: #fc5647;
+  background-color: #2168ae;
   color: white;
   border: none;
 }
 
 .primary-btn:hover {
-  background-color: #fc5647;
+  background-color:#072d54;
 }
 
 .secondary-btn {
   background-color: white;
-  color: #fc5647;
-  border: 1px solid #fc5647;
+  color: #2168ae;
+  border: 1px solid #2168ae;
 }
 
 .secondary-btn:hover {

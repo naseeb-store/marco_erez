@@ -1,40 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const firstNameInput = document.getElementById('firstName');
-    const lastNameInput = document.getElementById('lastName');
+    // Show all form groups immediately
     const phoneGroup = document.getElementById('phoneGroup');
     const emailGroup = document.getElementById('emailGroup');
     
-    function checkNames() {
-        if (firstNameInput.value.trim() !== '' && lastNameInput.value.trim() !== '') {
-            phoneGroup.style.display = 'block';
-        } else {
-            phoneGroup.style.display = 'none';
-            emailGroup.style.display = 'none';
-        }
-    }
-    
-    function checkPhone() {
-        if (document.getElementById('phone').value.trim() !== '') {
-            emailGroup.style.display = 'block';
-        } else {
-            emailGroup.style.display = 'none';
-        }
-    }
-    
-    firstNameInput.addEventListener('input', checkNames);
-    lastNameInput.addEventListener('input', checkNames);
-    
-    if (phoneGroup) {
-        document.getElementById('phone').addEventListener('input', checkPhone);
-    }
-    
+    if (phoneGroup) phoneGroup.style.display = 'block';
+    if (emailGroup) emailGroup.style.display = 'block';
+
     // Form submission
     document.getElementById('userInfoForm').addEventListener('submit', function(e) {
         e.preventDefault();
         
         const formData = {
-            firstName: firstNameInput.value,
-            lastName: lastNameInput.value,
+            firstName: document.getElementById('firstName').value,
+            lastName: document.getElementById('lastName').value,
             phone: document.getElementById('phone')?.value || '',
             email: document.getElementById('email')?.value || '',
             newsletter: document.getElementById('newsletter').checked
@@ -48,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', function() {
         const scrollableContent = document.querySelector('.form-scrollable');
         const titleHeight = document.querySelector('.form-title').offsetHeight;
-        scrollableContent.style.maxHeight = `calc(${window.innerHeight * 0.9}px - ${titleHeight}px)`;
+        if (scrollableContent) {
+            scrollableContent.style.maxHeight = `calc(${window.innerHeight * 0.9}px - ${titleHeight}px)`;
+        }
     });
 });

@@ -26,11 +26,17 @@ body {
 }
 
 .navbar-brand {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #2168ae;
     margin-right: 2rem;
     font-style: inherit;
+    /* Overflow prevention */
+    white-space: nowrap;       /* Prevent text wrapping */
+    overflow: hidden;          /* Hide overflow content */
+    text-overflow: ellipsis;   /* Show ellipsis (...) when text overflows */
+    max-width: 100%;           /* Ensure it doesn't exceed container width */
+    display: inline-block;     /* Needed for width constraints to work */
 }
 
 .navbar-nav {
@@ -302,6 +308,7 @@ body {
     padding-right: 8px; /* Space for scrollbar */
     overflow-y: scroll; /* Always show scrollbar */
     max-height: 200px;
+    font-family: inherit system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .textarea-wrapper textarea {
@@ -314,6 +321,7 @@ body {
     line-height: 1.5;
     overflow-y: hidden; /* Hide native scrollbar */
     overflow-x: hidden;
+    font-family: inherit system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Custom scrollbar styling */
@@ -342,6 +350,7 @@ body {
     color: #666;
     margin-bottom: 20px;
     font-size: 14px;
+    font-family: inherit system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .form-group {

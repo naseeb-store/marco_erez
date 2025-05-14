@@ -1,0 +1,376 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2168ae;
+    margin-right: 1.5rem;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+    position: relative;
+}
+
+.number-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    color: #333;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.nav-item.active .number-circle {
+    background-color: rgb(218, 183, 178);
+    color: #3f6082;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-item.active a {
+    color: #000;
+}
+
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Continue prompt section */
+.continue-prompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.prompt-content {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+}
+
+.prompt-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.prompt-message {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.prompt-message strong {
+    color: #2c3e50;
+    font-weight: 100;
+}
+
+/* Form container */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#startOverBtn, #continueBtn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.95rem;
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#startOverBtn {
+    background-color: white;
+    color: #2168ae;
+    border: 1px solid #2168ae;
+}
+
+#startOverBtn:hover {
+    background-color: #e0e0e0;
+}
+
+#continueBtn {
+    background-color: #2168ae;
+    color: white;
+    border: none;
+}
+
+#continueBtn:hover {
+    background-color: #082541;
+}
+
+/* Footer styles */
+.site-footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    padding: 0 15px;
+}
+
+.footer-heading {
+    color: #ecf0f1;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-address p, 
+.footer-about {
+    color: #bdc3c7;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.footer-phone, 
+.footer-email {
+    margin-top: 10px;
+    display: block;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+    
+    .navbar-nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        transition: left 0.3s;
+        z-index: 1000;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar-nav.active {
+        left: 0;
+    }
+    
+    .nav-item {
+        margin: 0.8rem 0;
+    }
+    
+    .navbar-toggle {
+        display: block;
+        z-index: 1100;
+    }
+    
+    /* Continue prompt */
+    .continue-prompt {
+        margin: 10px 0;
+    }
+    
+    .prompt-content {
+        padding: 1.5rem;
+    }
+    
+    .prompt-title {
+        font-size: 1.3rem;
+        white-space: normal;
+    }
+    
+    /* Form container */
+    .container {
+        padding: 20px;
+    }
+    
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer-column {
+        min-width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    
+    .footer-heading {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navbar */
+    .navbar {
+        padding: 0.8rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+    
+    /* Continue prompt */
+    .prompt-content {
+        padding: 1rem;
+    }
+    
+    .prompt-title {
+        font-size: 1.1rem;
+    }
+    
+    .prompt-message {
+        font-size: 0.9rem;
+    }
+    
+    /* Form container */
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .button-container {
+        flex-direction: column;
+    }
+    
+    #startOverBtn, #continueBtn {
+        width: 100%;
+    }
+    
+    #continueBtn {
+        margin-top: 10px;
+    }
+    
+    /* Footer */
+    .site-footer {
+        padding: 30px 0;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}

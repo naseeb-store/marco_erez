@@ -299,6 +299,10 @@ body {
     border-radius: 8px;
     border: -2px solid #e0e0e0;
 }
+.form-container placeholder{
+    font-size: 25px;
+    font-weight: 400;
+}
 
 /* Textarea with always-visible external scrollbar */
 .textarea-wrapper {
